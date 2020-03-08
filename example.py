@@ -34,7 +34,7 @@ if __name__ == '__main__':
 
     order1 = {"client_oid": "buy",
               "type": "1",
-              "price": last_price-0.001,
+              "price": last_price-0.05,
               "size": "3",
               "match_price": "0"}
     orders.append(order1)
