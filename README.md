@@ -588,4 +588,4 @@ def subscribe(url, api_key, passphrase, secret_key, channels)
 def unsubscribe(url, api_key, passphrase, secret_key, channels)
 ```
 
-关于python永续合约websocket的使用demo见websocket_example.py。
+关于python永续合约websocket的使用demo见websocket_example.py。# coin
