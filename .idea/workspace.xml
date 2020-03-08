@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="e423cb6b-f332-42e6-81ad-f0862c935780" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1Yf9bcL06cTgurgj8AIZwpofSkM" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+  </component>
+  <component name="RunManager" selected="Python.example">
+    <configuration name="example" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="okex-python-sdk-api" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/example.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="session1" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="okex-python-sdk-api" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/session1.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="true" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="sission1" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="okex-python-sdk-api" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/sission1.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="sission2" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="okex-python-sdk-api" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/sission2.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.example" />
+        <item itemvalue="Python.sission1" />
+        <item itemvalue="Python.session1" />
+        <item itemvalue="Python.session1" />
+        <item itemvalue="Python.sission2" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="e423cb6b-f332-42e6-81ad-f0862c935780" name="Default Changelist" comment="" />
+      <created>1583322853292</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1583322853292</updated>
+      <workItem from="1583322854703" duration="561000" />
+      <workItem from="1583323521211" duration="2470000" />
+      <workItem from="1583538736203" duration="129000" />
+      <workItem from="1583558458399" duration="21000" />
+      <workItem from="1583567599242" duration="304000" />
+      <workItem from="1583570040615" duration="302000" />
+      <workItem from="1583571168560" duration="12784000" />
+      <workItem from="1583589947462" duration="3412000" />
+      <workItem from="1583630442499" duration="294000" />
+      <workItem from="1583634135430" duration="1819000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="424" y="54" key="#session1" timestamp="1583558469611">
+      <screen x="0" y="23" width="1440" height="808" />
+    </state>
+    <state x="424" y="54" key="#session1/0.23.1440.808@0.23.1440.808" timestamp="1583558469611" />
+    <state width="1358" height="194" key="GridCell.Tab.0.bottom" timestamp="1583639247032">
+      <screen x="0" y="23" width="1440" height="808" />
+    </state>
+    <state width="1358" height="194" key="GridCell.Tab.0.bottom/0.23.1440.808@0.23.1440.808" timestamp="1583639247032" />
+    <state width="1358" height="194" key="GridCell.Tab.0.bottom/0.23.1440.811@0.23.1440.811" timestamp="1583594291908" />
+    <state width="1358" height="194" key="GridCell.Tab.0.center" timestamp="1583639247032">
+      <screen x="0" y="23" width="1440" height="808" />
+    </state>
+    <state width="1358" height="194" key="GridCell.Tab.0.center/0.23.1440.808@0.23.1440.808" timestamp="1583639247032" />
+    <state width="1358" height="194" key="GridCell.Tab.0.center/0.23.1440.811@0.23.1440.811" timestamp="1583594291907" />
+    <state width="1358" height="194" key="GridCell.Tab.0.left" timestamp="1583639247031">
+      <screen x="0" y="23" width="1440" height="808" />
+    </state>
+    <state width="1358" height="194" key="GridCell.Tab.0.left/0.23.1440.808@0.23.1440.808" timestamp="1583639247031" />
+    <state width="1358" height="194" key="GridCell.Tab.0.left/0.23.1440.811@0.23.1440.811" timestamp="1583594291907" />
+    <state width="1358" height="194" key="GridCell.Tab.0.right" timestamp="1583639247032">
+      <screen x="0" y="23" width="1440" height="808" />
+    </state>
+    <state width="1358" height="194" key="GridCell.Tab.0.right/0.23.1440.808@0.23.1440.808" timestamp="1583639247032" />
+    <state width="1358" height="194" key="GridCell.Tab.0.right/0.23.1440.811@0.23.1440.811" timestamp="1583594291907" />
+    <state width="1358" height="242" key="GridCell.Tab.1.bottom" timestamp="1583581334660">
+      <screen x="0" y="23" width="1440" height="808" />
+    </state>
+    <state width="1358" height="242" key="GridCell.Tab.1.bottom/0.23.1440.808@0.23.1440.808" timestamp="1583581334660" />
+    <state width="1358" height="242" key="GridCell.Tab.1.center" timestamp="1583581334660">
+      <screen x="0" y="23" width="1440" height="808" />
+    </state>
+    <state width="1358" height="242" key="GridCell.Tab.1.center/0.23.1440.808@0.23.1440.808" timestamp="1583581334660" />
+    <state width="1358" height="242" key="GridCell.Tab.1.left" timestamp="1583581334659">
+      <screen x="0" y="23" width="1440" height="808" />
+    </state>
+    <state width="1358" height="242" key="GridCell.Tab.1.left/0.23.1440.808@0.23.1440.808" timestamp="1583581334659" />
+    <state width="1358" height="242" key="GridCell.Tab.1.right" timestamp="1583581334660">
+      <screen x="0" y="23" width="1440" height="808" />
+    </state>
+    <state width="1358" height="242" key="GridCell.Tab.1.right/0.23.1440.808@0.23.1440.808" timestamp="1583581334660" />
+    <state x="226" y="69" key="SettingsEditor" timestamp="1583571268892">
+      <screen x="0" y="23" width="1440" height="808" />
+    </state>
+    <state x="226" y="69" key="SettingsEditor/0.23.1440.808@0.23.1440.808" timestamp="1583571268892" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/okex_python_sdk_api$sission2.coverage" NAME="sission2 Coverage Results" MODIFIED="1583338142592" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/okex_python_sdk_api$example.coverage" NAME="example Coverage Results" MODIFIED="1583639247011" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/okex_python_sdk_api$sission1.coverage" NAME="sission1 Coverage Results" MODIFIED="1583589691306" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/okex_python_sdk_api$session1.coverage" NAME="session1 Coverage Results" MODIFIED="1583338793565" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+  </component>
+</project>
