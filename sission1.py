@@ -55,7 +55,7 @@ if __name__ == '__main__':
     takeorders = futureAPI.take_orders('EOS-USD-200327',
                                        orders_data=orders_data,
                                        leverage=10)
-    while True:
+    while 3.02<last_price<3.122:
         get_orderID=takeorders['order_info']
     #获取订单状态
         for i in get_orderID:
@@ -71,96 +71,125 @@ if __name__ == '__main__':
 
             get_orderID = takeorders['order_info']
             if int(order_status) == 2 :
-                if int(order_type) == 1:
-                    #价格跌破1.6，则1.6为止损点
-                    # 获取当前最新的价格
-                    price = futureAPI.get_specific_ticker('EOS-USD-200327')
-                    # print(price)
-                    #print('EOS最新价格为:', price['last'])
-                    # 设置价格为浮点型
-                    last_price = float(price['last'])
-                    orders = []
-                    if last_price <= 3.024 :
-                        order1 = {"client_oid": "sell",
-                                  "type": "3",
-                                  "price": "3.025",
-                                  "size": "1",
-                                  "match_price": "0"}
-                    else :
-                        order1 = {"client_oid": "sell",
-                                  "type": "3",
-                                  "price": "3.122",
-                                  "size": "1",
-                                  "match_price": "0"}
+                    if int(order_type) == 1:
+                        #价格跌破1.6，则1.6为止损点
+                        # 获取当前最新的价格
+                        price = futureAPI.get_specific_ticker('EOS-USD-200327')
+                        # print(price)
+                        #print('EOS最新价格为:', price['last'])
+                        # 设置价格为浮点型
+                        last_price = float(price['last'])
+                        orders = []
+                        if last_price <= 3.024 :
+                            order1 = {"client_oid": "sell",
+                                      "type": "3",
+                                      "price": "3.025",
+                                      "size": "1",
+                                      "match_price": "0"}
+                        else :
+                            order1 = {"client_oid": "sell",
+                                      "type": "3",
+                                      "price": "3.122",
+                                      "size": "1",
+                                      "match_price": "0"}
 
-                    orders.append(order1)
-                    orders_data = json.dumps(orders)
-                    takeorders = futureAPI.take_orders('EOS-USD-200327',
-                                                       orders_data=orders_data,
-                                                       leverage=10)
-                    get_orderID = takeorders['order_info']
-                # 如果4元开空成交，则止损设置5.5元止损
-                if int(order_type) == 2:
-                    #价格涨破6，则6为止损点,否则2元平空
-                    # 获取当前最新的价格
-                    price = futureAPI.get_specific_ticker('EOS-USD-200327')
-                    # print(price)
-                    print('EOS最新价格为:', price['last'])
-                    # 设置价格为浮点型
-                    last_price = float(price['last'])
-                    orders = []
-                    if last_price >= 3.185:
+                        orders.append(order1)
+                        orders_data = json.dumps(orders)
+                        takeorders = futureAPI.take_orders('EOS-USD-200327',
+                                                           orders_data=orders_data,
+                                                           leverage=10)
+                        get_orderID = takeorders['order_info']
+                        print('开始运行交易系统')
+                        # 获取当前最新的价格
+                        price = futureAPI.get_specific_ticker('EOS-USD-200327')
+                        # print(price)
+                        print('EOS最新价格为:', price['last'])
+                        # 设置价格为浮点型
+                        last_price = float(price['last'])
+                    # 如果4元开空成交，则止损设置5.5元止损
+                    if int(order_type) == 2:
+                        #价格涨破6，则6为止损点,否则2元平空
+                        # 获取当前最新的价格
+                        price = futureAPI.get_specific_ticker('EOS-USD-200327')
+                        # print(price)
+                        print('EOS最新价格为:', price['last'])
+                        # 设置价格为浮点型
+                        last_price = float(price['last'])
+                        orders = []
+                        if last_price >= 3.185:
+                            order1 = {"client_oid": "buy",
+                                      "type": "4",
+                                      "price": "3.184",
+                                      "size": "1",
+                                      "match_price": "0"}
+                        else:
+                            order1 = {"client_oid": "sell",
+                                      "type": "4",
+                                      "price": "3.085",
+                                      "size": "1",
+                                      "match_price": "0"}
+
+                        orders.append(order1)
+                        orders_data = json.dumps(orders)
+                        takeorders = futureAPI.take_orders('EOS-USD-200327',
+                                                           orders_data=orders_data,
+                                                           leverage=10)
+                        get_orderID = takeorders['order_info']
+                        print('开始运行交易系统')
+                        # 获取当前最新的价格
+                        price = futureAPI.get_specific_ticker('EOS-USD-200327')
+                        # print(price)
+                        print('EOS最新价格为:', price['last'])
+                        # 设置价格为浮点型
+                        last_price = float(price['last'])
+                    if int(order_type) == 3:
+                        print('平多已经成交,设置开多新订单')
+                        orders = []
                         order1 = {"client_oid": "buy",
-                                  "type": "4",
-                                  "price": "3.184",
-                                  "size": "1",
-                                  "match_price": "0"}
-                    else:
-                        order1 = {"client_oid": "sell",
-                                  "type": "4",
+                                  "type": "1",
                                   "price": "3.085",
                                   "size": "1",
                                   "match_price": "0"}
-
-                    orders.append(order1)
-                    orders_data = json.dumps(orders)
-                    takeorders = futureAPI.take_orders('EOS-USD-200327',
-                                                       orders_data=orders_data,
-                                                       leverage=10)
-                    get_orderID = takeorders['order_info']
-                if int(order_type) == 3:
-                    print('平多已经成交,设置开多新订单')
-                    orders = []
-                    order1 = {"client_oid": "buy",
-                              "type": "1",
-                              "price": "3.085",
-                              "size": "1",
-                              "match_price": "0"}
-                    orders.append(order1)
-                    orders_data = json.dumps(orders)
-                    takeorders = futureAPI.take_orders('EOS-USD-200327',
-                                                       orders_data=orders_data,
-                                                       leverage=10)
-                    print('EOS期货新多单下单成功')
-                    get_orderID = takeorders['order_info']
-                    time.sleep(1)
-                if int(order_type) == 4:
-                    print('平空已经成交,设置开空新订单')
-                    orders = []
-                    order2 = {"client_oid": "sell",
-                              "type": "2",
-                              "price": "3.122",
-                              "size": "1",
-                              "match_price": "0"}
-                    orders.append(order2)
-                    orders_data = json.dumps(orders)
-                    takeorders = futureAPI.take_orders('EOS-USD-200327',
-                                                       orders_data=orders_data,
-                                                       leverage=10)
-                    print('EOS期货新空单下单成功')
-                    get_orderID = takeorders['order_info']
-                    time.sleep(1)
+                        orders.append(order1)
+                        orders_data = json.dumps(orders)
+                        takeorders = futureAPI.take_orders('EOS-USD-200327',
+                                                           orders_data=orders_data,
+                                                           leverage=10)
+                        print('EOS期货新多单下单成功')
+                        get_orderID = takeorders['order_info']
+                        print('开始运行交易系统')
+                        # 获取当前最新的价格
+                        price = futureAPI.get_specific_ticker('EOS-USD-200327')
+                        # print(price)
+                        print('EOS最新价格为:', price['last'])
+                        # 设置价格为浮点型
+                        last_price = float(price['last'])
+                        time.sleep(1)
+                    if int(order_type) == 4:
+                        print('平空已经成交,设置开空新订单')
+                        orders = []
+                        order2 = {"client_oid": "sell",
+                                  "type": "2",
+                                  "price": "3.122",
+                                  "size": "1",
+                                  "match_price": "0"}
+                        orders.append(order2)
+                        orders_data = json.dumps(orders)
+                        takeorders = futureAPI.take_orders('EOS-USD-200327',
+                                                           orders_data=orders_data,
+                                                           leverage=10)
+                        print('EOS期货新空单下单成功')
+                        get_orderID = takeorders['order_info']
+                        time.sleep(1)
+                        print('开始运行交易系统')
+                        # 获取当前最新的价格
+                        price = futureAPI.get_specific_ticker('EOS-USD-200327')
+                        # print(price)
+                        print('EOS最新价格为:', price['last'])
+                        # 设置价格为浮点型
+                        last_price = float(price['last'])
             else:
-                print("订单无变化")
-                time.sleep(2)
+                    print("订单无变化")
+                    time.sleep(5)
+
 
